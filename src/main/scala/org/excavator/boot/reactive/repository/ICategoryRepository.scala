@@ -1,5 +1,10 @@
 package org.excavator.boot.reactive.repository
 
-trait ICategoryRepository {
+import java.util.UUID
+
+import org.excavator.boot.reactive.entity.Category
+import org.springframework.data.jpa.repository.JpaRepository
+
+trait ICategoryRepository extends JpaRepository[Category, UUID]{
 
 }
